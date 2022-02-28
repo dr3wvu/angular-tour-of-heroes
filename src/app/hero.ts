@@ -11,3 +11,17 @@ export class HeroForm {
     public alterEgo?: string
   ) {}
 }
+
+export interface Battery {
+  id: number,
+  battryNum: string,
+  in: string,
+  out: string
+}
+
+export interface Device {
+  id: number,
+  Device: string,
+  in: string,
+  out: string
+}

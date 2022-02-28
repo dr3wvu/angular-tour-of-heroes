@@ -1,0 +1,18 @@
+<h1>Pool 1 Battery Status</h1>
+
+<nav>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+            <span class="material-icons">battery_charging_full</span>
+            <div *ngFor="let bat of batteries" >
+                <div >
+                    <a routerLink="bat.battryNum">
+                        {{bat.battryNum}}
+                    </a>
+                    <p>{{bat.in}}</p>
+                    <p>{{bat.out}}</p>
+                </div>
+            </div>
+        </mat-menu>
+</nav>
+
